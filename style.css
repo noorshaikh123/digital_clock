@@ -1,0 +1,77 @@
+.clock{
+    background-color: #737373;
+    height: 300px;
+    width: 600px;
+    border-radius: 5px;
+    border: solid 20px #1a1a1a;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    font-family: cursive;
+    font-weight: 700;
+    text-align: center;
+    font-size: 5vh;
+    margin-bottom: 60px;
+}
+.innerdiv{
+    height: 160px;
+    width: 470px;
+    border: solid 20px #333333;
+    margin: 45px;
+    border-radius: 10px;
+    text-align: center;
+}
+.clocktext{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+.clockdiv{
+    margin-top: 30px;
+    font-size: 50px;
+}
+.daytext{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    margin: 30px; 
+}
+.daydate{
+    margin: 20px;
+}
+.logo{
+    display: block;
+    font-size: 25px;
+    color:darkgrey;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 55px;
+}
+@media screen and (min-width:300px) and (max-width:420px) {
+    .clock{
+        height: 180px;
+        width: 300px;
+        border: solid 15px #1a1a1a;
+    }
+    .innerdiv{
+        height: 135px;
+        width: 255px;
+        border: solid 10px #333333;
+        margin: 15px;
+        border-radius: 10px;
+    }
+    .clocktext{
+        font-size: 30px; }
+    .clockdiv{
+        margin-top: 15px;
+        font-size: 30px;}
+    .daytext{
+        font-size: 20px;
+        margin: 10px; }
+    .logo{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/0069fc3784.js" crossorigin="anonymous"></script>
+   <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1 class="text">Digital Clock <i class="fa-regular fa-clock"></i></h1>
+   <div class="parent">
+    <div class="clock">
+        <div class="innerdiv">
+            <div class="clockdiv">
+                <span id="hr" class="clocktext">HH</span> : <span id="min" class="clocktext">MM</span> : <span id="sec" class="clocktext">SS</span>
+            </div>
+            <div class="daydate">
+                <span id="day" class="daytext">DAY</span>
+                <span id="date" class="daytext">DAY</span>
+            </div>
+            <span class="logo">Casio</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    function displayTime(){
+
+    const date = new Date();
+
+    const h = document.getElementById('hr');
+    h.innerHTML = date.getHours();
+
+    const m = document.getElementById('min');
+    m.innerHTML = date.getMinutes();
+
+    const s = document.getElementById('sec');
+    s.innerHTML = date.getSeconds();
+
+    const day = document.getElementById('day'); 
+    let daychange = parseInt(date.getDay());
+
+    if(daychange=="0")
+    day.innerHTML = "Sun";
+    
+    else if(daychange=="1")
+    day.innerHTML = "Mon";
+    
+    else if(daychange=="2")
+    day.innerHTML = "Tues";
+    
+    else if(daychange=="3")
+    day.innerHTML = "Wed";
+    
+    else if(daychange=="4")
+    day.innerHTML = "Thur";
+
+    else if(daychange=="5")
+    day.innerHTML = "Fri";
+
+    else
+    day.innerHTML = "Sat";
+
+    const dates = document.getElementById('date');
+    dates.innerHTML = date.toLocaleDateString();
+    
+    }
+    setInterval(displayTime, 1000);
+</script>
+</body>
+</html>
