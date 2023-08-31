@@ -53,12 +53,14 @@
     .clock{
         height: 180px;
         width: 300px;
+        border: solid 10px #1a1a1a;
     }
     .innerdiv{
         height: 135px;
         width: 255px;
         margin: 15px;
         border-radius: 10px;
+        border: solid 8px #333333;
     }
     .clocktext{
         font-size: 30px; }
