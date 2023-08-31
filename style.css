@@ -1,9 +1,9 @@
 .clock{
-    background-color: #737373;
+    background: linear-gradient(to bottom left, #ff99ff 0%, #660066 100%);
     height: 300px;
     width: 600px;
-    border-radius: 5px;
-    border: solid 20px #1a1a1a;
+    border-radius: 20px;
+    border: solid 15px #1a1a1a;
 }
 .parent{
     display: flex;
@@ -20,8 +20,8 @@
 .innerdiv{
     height: 160px;
     width: 470px;
-    border: solid 20px #333333;
-    margin: 45px;
+    border: solid 10px #333333;
+    margin: 50px;
     border-radius: 10px;
     text-align: center;
 }
